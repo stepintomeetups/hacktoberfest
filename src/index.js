@@ -37,12 +37,45 @@ function head() {
 function body() {
   return `
     <body>
-        <p>Hai</p>
-
         <main>
+            <div class="landing">
+              <div class="logo">
+                <img src="szakmai-css-munka.png" />
+              </div>
+            </div>
+
             <div class="content">
-              <div>
-                <h3>Hacktoberfest Issue-k</h3>
+              <div class="boxes">
+                <a href="https://www.facebook.com/events/333876941022112" class="box">
+                    <div class="box-wrapper">
+                        <div class="box-image">
+                            <img src="facebook.png" />
+                        </div>
+                        <div class="box-details">
+                            <div class="box-title">
+                            Step into Open Source // SiM 2020/10 // Hacktoberfest 2020
+                            </div>
+                            <div class="box-date">
+                            2020. 10. 26. 19:00
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://twitch.tv/stepintomeetups" class="box">
+                    <div class="box-wrapper">
+                        <div class="box-image">
+                            <img src="twitch.png" />
+                        </div>
+                        <div class="box-details">
+                            <div class="box-title">
+                            Step into Meetups Twitch Csatorna
+                            </div>
+                            <div class="box-date">
+                            Élő Stream
+                            </div>
+                        </div>
+                    </div>
+                </a>
               </div>
 
               ${data.repositories.map(repository).join('').repeat(3)}
