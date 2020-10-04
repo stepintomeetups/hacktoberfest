@@ -1,0 +1,45 @@
+{
+  "private": "true",
+  "name": "@stepintomeetups/hacktoberfest",
+  "version": "1.0.0",
+  "description": "A Step into Open Source/Hacktoberfest esemény weboldala.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "node src/index.js",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "serve": "http-server -c-1 ./public",
+    "watch": "nodemon --watch src"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stepintomeetups/hacktoberfest.git"
+  },
+  "keywords": [],
+  "author": "Step into Meetups",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/stepintomeetups/hacktoberfest/issues"
+  },
+  "homepage": "https://github.com/stepintomeetups/hacktoberfest#readme",
+  "devDependencies": {
+    "@commitlint/cli": "9.0.1",
+    "@commitlint/config-conventional": "9.0.1",
+    "eslint": "7.4.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "http-server": "0.12.3",
+    "husky": "4.2.5",
+    "nodemon": "2.0.4",
+    "prettier": "2.0.5"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
