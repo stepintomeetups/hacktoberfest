@@ -45,7 +45,7 @@ function body() {
                 <h3>Hacktoberfest Issue-k</h3>
               </div>
 
-              ${data.repositories.map(repository).join('')}
+              ${data.repositories.map(repository).join('').repeat(3)}
             </div>
         </main>
     </body>`
@@ -69,6 +69,8 @@ function repository(repo) {
             <h5>Akiktől segítséget kérhetsz</h5>
             ${repositoryMaintainerList(repo)}
           </div>
+
+          ${issues(repo)}
         </div>
     `
 }
@@ -98,10 +100,10 @@ function repositoryMaintainerList(repo) {
                       </div>
                       <div class="repository-maintainer-bottom">
                         <a href="${m.github}">
-                          
+                          <img src="github.svg" />
                         </a>
                         <a href="${m.linkedin}">
-                          
+                          <img src="linkedin.svg" />
                         </a>
                       </div>
                     </div>
@@ -109,6 +111,37 @@ function repositoryMaintainerList(repo) {
             `
           })
           .join('')}
+    </div>
+    `
+}
+
+function issues(repo) {
+  return `
+    <div class="issues">
+    ${repo.issues
+      .map((i) => {
+        return `
+          <div class="issue">
+            <div class="issue-title">
+              <h5>
+                <a href="https://github.com/${repo.owner}/${repo.project}/issues/${i.number}">
+                  <span class="issue-title-number">
+                    #${i.number}
+                  </span>
+                  <span class="issue-title-text">
+                    ${i.title}
+                  </span>
+                </a>
+              </h5>
+            </div>
+            <div class="issue-description">
+              <p>${i.description}</p>
+            </div>
+          </div>
+        `
+      })
+      .join('')
+      .repeat(4)}
     </div>
     `
 }

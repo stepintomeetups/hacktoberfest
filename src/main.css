@@ -55,6 +55,9 @@ html, body {
     margin: 0.777em 0em;
 }
 
+.repository:not(:first-child) {
+    padding-top: 2rem;
+}
 
 .repository-title > h4 {
     font-size: 2rem;
@@ -118,4 +121,47 @@ html, body {
     box-shadow: 4px 4px 0px 0px var(--hacktober-pink);
     border-radius: 50%;
     width: 125px;
+}
+
+.repository-maintainer-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.repository-maintainer-bottom  {
+    display: flex;
+}
+
+.repository-maintainer-bottom img  {
+    width: 1.69rem;
+}
+
+.repository-maintainer-bottom a:not(:last-child)  {
+    padding-right: 0.69rem;
+
+}
+
+.issue {
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.issue-title {
+    font-size: 1.75rem;
+}
+
+.issue-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.issue-title-number {
+    font-weight: bold;
+    color: var(--hacktober-light-blue);
+}
+
+.issue-description {
+    font-size: 1.3rem;
+    padding-left: 2rem;
 }
