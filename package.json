@@ -9,7 +9,7 @@
     "lint": "eslint . --ext .js",
     "lint:fix": "eslint . --ext .js --fix",
     "serve": "http-server -c-1 ./public",
-    "watch": "nodemon --watch src"
+    "watch": "nodemon -e js,css --watch src"
   },
   "husky": {
     "hooks": {
