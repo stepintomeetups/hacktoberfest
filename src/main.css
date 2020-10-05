@@ -140,6 +140,23 @@ html, body {
     padding-top: 2rem;
 }
 
+.repository-title {
+    display: flex;
+    align-items: center;
+}
+
+.repository-title-image-parent {
+    padding: 13px;
+    margin-right: 1.3rem;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 4px 4px 0px 0px var(--hacktober-pink);
+}
+
+.repository-title-image {
+    width: 90px;
+}
+
 .repository-title > h4 {
     font-size: 2rem;
     font-weight: bold;
@@ -153,7 +170,7 @@ html, body {
 .repository-topics {
     display: flex;
     flex-direction: row;
-    padding-top: 7px;
+    padding-top: 12px;
     padding-bottom: 10px;
 }
 

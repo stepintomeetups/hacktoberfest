@@ -88,6 +88,11 @@ function repository(repo) {
   return `
         <div class="repository">
           <div class="repository-title">
+            <a href="https://github.com/${repo.owner}">
+              <div class="repository-title-image-parent">
+                <img src="${repo.owner}.png" class="repository-title-image"/>
+              </div>
+            </a>
             <h4>
                 <a href="https://github.com/${repo.owner}/${repo.project}">${repo.owner}/${repo.project}</a>
             </h4>
