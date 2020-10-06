@@ -35,7 +35,7 @@ jobs:
       - name: Copy Repository Contents using SCP
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: public
+          local: dist
           remote: deployment/static/stepintomeetups.hu
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USERNAME }}

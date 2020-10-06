@@ -5,7 +5,8 @@
   "description": "A Step into Open Source/Hacktoberfest esemény weboldala.",
   "main": "src/index.js",
   "scripts": {
-    "build": "node src/index.js",
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug",
     "lint": "eslint . --ext .js",
     "lint:fix": "eslint . --ext .js --fix",
     "serve": "http-server -c-1 ./public",
@@ -37,7 +38,9 @@
     "http-server": "0.12.3",
     "husky": "4.2.5",
     "nodemon": "2.0.4",
-    "prettier": "2.0.5"
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.0.5",
+    "pug": "^3.0.0"
   },
   "engines": {
     "node": ">=14"

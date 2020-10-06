@@ -1,0 +1,98 @@
+mixin repositoryMaintainerList(maintainers)
+  .repository-maintainer-list
+    each maintainer in maintainers
+      .repository-maintainer
+          .repository-maintainer-image
+            img(src=maintainer.image)
+          .repository-maintainer-information
+            .repository-maintainer-top
+              .repository-maintainer-name=maintainer.name
+              .repository-maintainer-email=maintainer.email
+            .repository-maintainer-bottom
+              a(href=maintainer.github)
+                img(src="./assets/github.svg")
+              a(href=maintainer.linkedin)
+                img(src="./assets/linkedin.svg")
+
+mixin issues(repo)
+  .issues
+    each issue in repo.issues
+      .issue
+        .issue-title
+          h5
+            a(href='https://github.com/' + repo.owner + '/' + repo.project + '/' + 'issues/' + issue.number)
+              span.issue-title-number='#'+issue.number
+              span.issue-title-text=' '+issue.title
+        .issue-description
+          p=issue.description
+
+mixin repository(repo)
+  .repository
+    .repository-title
+      a(href='https://github.com/' + repo.owner)
+        if repo.showLogo
+          .repository-title-image-parent
+            img.repository-title-image(src='./assets/' + repo.owner + '.png')
+      div
+        h4
+          a(href='https://github.com/' + repo.owner + '/' + repo.project)= repo.owner + '/' + repo.project
+        .repository-topics
+          each topic in repo.topics
+            span= topic
+    .repository-description
+      p= repo.description
+    .repository-maintainers
+      h5 Akiktől segítséget kérhetsz
+      +repositoryMaintainerList(repo.maintainers)
+    +issues(repo)
+
+doctype html
+html(lang="hu-HU")
+  head
+    title Step into Open Source
+
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    meta(name="description" content="A Step into Open Source (a Hacktoberfest része) meetup hivatalos honlapja.")
+
+    meta(property="og:image:height" content="1274")
+    meta(property="og:image:width" content="849")
+    meta(property="og:site_name" content="Step into Open Source")
+    meta(property="og:locale" content="hu_HU")
+    meta(property="og:title" content="Step into Open Source")
+    meta(property="og:description" content="A Step into Open Source (a Hacktoberfest része) meetup hivatalos honlapja.")
+    meta(property="og:url" content="https://stepintomeetups.hu")
+    meta(property="og:image" content="https://stepintomeetups.hu/og-image.jpg")
+
+    link(rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16.png")
+
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet")
+    link(rel="stylesheet", href="main.css")
+  body
+    main
+      .landing
+        .logo
+          img(src="./assets/szakmai-css-munka.png")
+
+      .content
+        .boxes
+          a.box(href="https://www.facebook.com/events/333876941022112")
+            .box-wrapper
+              .box-image
+                img(src="./assets/facebook.png")
+              .box-details
+                .box-title Step into Open Source // SiM 2020/10 // Hacktoberfest 2020
+                  .box-date 2020. 10. 26. 19:00
+          a.box(href="https://twitch.tv/stepintomeetups")
+            .box-wrapper
+              .box-image
+                img(src="./assets/twitch.png")
+              .box-details
+                .box-title Step into Meetups Twitch Csatorna
+                .box-date Élő Stream
+        each repo in repositories
+          +repository(repo)

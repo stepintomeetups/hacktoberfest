@@ -1,0 +1,129 @@
+[
+  {
+    "owner": "cryptid-org",
+    "project": "cryptid-native",
+    "description": "A CryptID egy olyan kriptográfiai könyvtár, mely újszerű titkosítási és aláírási protokollokat valósít meg. Mindezt feltörekvő technológiákra alapozva teszi, mint a WebAssembly és a WebAssembly System Interface.",
+    "maintainers": [
+      "BeardOfDoom",
+      "battila7"
+    ],
+    "showLogo": true,
+    "topics": [
+      "Kriptográfia",
+      "WebAssembly",
+      "C"
+    ],
+    "issues": [
+      {
+        "number": "27",
+        "title": "Windows Build",
+        "description": "A könyvtár platformfüggő részeinek portolása Windows-ra, majd a fordítás és futtatás Windows-on.",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "owner": "cryptid-org",
+    "project": "crpytid-js",
+    "description": "A cryptid-native C nyelven készült, és elsősorban WebAssemblyt céloz. Az így létrejött WebAssembly modult csomagolja be a cryptid-js, lehetővé téve a modul kényelmes felhasználását böngészőben és szerver-oldalon egyaránt.",
+    "maintainers": [
+      "BeardOfDoom",
+      "battila7"
+    ],
+    "showLogo": true,
+    "topics": [
+      "Kriptográfia",
+      "JavaScript"
+    ],
+    "issues": [
+      {
+        "number": "6",
+        "title": "Migrate to pnpm",
+        "description": "A könyvtár jelenleg az npm package managert használja. Ugyanerre a feladatra egy jobb alternatíva a pnpm. A feladat egy gyors migráció npm-ről pnpm-re.",
+        "level": 1
+      },
+      {
+        "number": "7",
+        "title": "Introduce eslint and prettier",
+        "description": "Konfiguráljuk a kódbázis lintelését és formázását az eslint és a prettier alkalmazások segítségével.",
+        "level": 1
+      },
+      {
+        "number": "8",
+        "title": "Introduce commit message linting",
+        "description": "Nemcsak kódot lehet lintelni, hanem akár git commit üzeneteket is. Ebben az issue-ban a feladat a conventional commits specifikációnak megfelelő lintelés konfigurálása.",
+        "level": 1
+      },
+      {
+        "number": "9",
+        "title": "GitHub Actions workflow on push",
+        "description": "Megalapozandó a cryptid-js Continuous Integration pipeline-ját, készítsünk egy olyan GitHub Actions workflow-t, mely lefuttatja a lintelést minden egyes master push vagy PR alkalmával.",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "owner": "chreeio",
+    "project": "fastify-status",
+    "description": "Version és healthcheck információkat kiszolgáló plugin a Fastify Node.js HTTP keretrendszerhez.",
+    "maintainers": [
+      "lajoskvcs",
+      "battila7"
+    ],
+    "showLogo": true,
+    "topics": [
+      "HTTP",
+      "Fastify",
+      "Node.js",
+      "TypeScript"
+    ],
+    "issues": [
+      {
+        "number": "1",
+        "title": "Deploy to npmjs.com",
+        "description": "Készítsünk egy olyan GitHub Actions jobot, mely a kipakolja a könyvtárat tartalmazó npm csomagot npmjs.com-ra.",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "Configurable unavailable handler",
+        "description": "Ha a fastify-status által kezelt szolgáltatás FAILING státuszra vált, akkor a könyvtár automatikusan 503 SERVICE UNAVAILABLE választ küld minden lekérdezésre. A feladat részeként ezt a viselkedést szeretnénk konfigurálhatóvá tenni.",
+        "level": 1
+      },
+      {
+        "number": "3",
+        "title": "Detailed and friendly README",
+        "description": "A fastify-status sebtiben készült, mint apró belsős utility csomag. Emiatt nem sok dokumentáció áll rendelkezésre hozzá. Készítsünk tehát egy szép, informatív README-t, mely eligazítja a látogatókat és a felhasználókat.",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "owner": "sokuteihq",
+    "project": "sokutei",
+    "description": "C nyelven írt teljesítménytesztelési könyvtár, mely kifejezetten a különleges célplatformokon (WebAssembly, beágyazott eszközök, stb.) való felhasználásra készült.",
+    "maintainers": [
+      "VGeorgee",
+      "battila7"
+    ],
+    "showLogo": false,
+    "topics": [
+      "Teljesítménytesztelés",
+      "C"
+    ],
+    "issues": [
+      {
+        "number": "21",
+        "title": "Testing with CMake",
+        "description": "CMake segítségével állítsunk össze egy tesztelési folyamatot, majd írjunk egy példa tesztet a greatest tesztelési könyvtárra alapozva.",
+        "level": 1
+      },
+      {
+        "number": "7",
+        "title": "GitHub Actions Test Workflow",
+        "description": "Megalapozandó a sokutei Continuous Integration pipeline-ját, készítsünk egy olyan GitHub Actions workflow-t, mely lefuttatja a teszteket minden egyes master push vagy PR alkalmával.",
+        "level": 1
+      }
+    ]
+  }
+]
