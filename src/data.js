@@ -36,6 +36,7 @@ module.exports = {
       description:
         'A CryptID egy olyan kriptográfiai könyvtár, mely újszerű titkosítási és aláírási protokollokat valósít meg. Mindezt feltörekvő technológiákra alapozva teszi, mint a WebAssembly és a WebAssembly System Interface.',
       maintainers: ['BeardOfDoom', 'battila7'],
+      showLogo: true,
       topics: ['Kriptográfia', 'WebAssembly', 'C'],
       issues: [
         {
@@ -53,6 +54,7 @@ module.exports = {
       description:
         'A cryptid-native C nyelven készült, és elsősorban WebAssemblyt céloz. Ezt a WebAssembly modult csomagolja be a cryptid-js, lehetővé téve a modul kényelmes felhasználását böngészőben és szerver-oldalon egyaránt.',
       maintainers: ['BeardOfDoom', 'battila7'],
+      showLogo: true,
       topics: ['Kriptográfia', 'JavaScript'],
       issues: [
         {
@@ -90,6 +92,7 @@ module.exports = {
       project: 'fastify-status',
       description: 'Version és healthcheck információkat kiszolgáló plugin a Fastify Node.js HTTP keretrendszerhez.',
       maintainers: ['lajoskvcs', 'battila7'],
+      showLogo: true,
       topics: ['HTTP', 'Fastify', 'Node.js', 'TypeScript'],
       issues: [
         {
@@ -120,6 +123,7 @@ module.exports = {
       project: 'sokutei',
       description: '',
       maintainers: ['VGeorgee', 'battila7'],
+      showLogo: false,
       topics: [],
       issues: [
         {
