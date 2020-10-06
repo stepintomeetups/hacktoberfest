@@ -78,7 +78,7 @@ function body() {
                 </a>
               </div>
 
-              ${data.repositories.map(repository).join('').repeat(3)}
+              ${data.repositories.map(repository).join('')}
             </div>
         </main>
     </body>`
@@ -178,8 +178,7 @@ function issues(repo) {
           </div>
         `
       })
-      .join('')
-      .repeat(4)}
+      .join('')}
     </div>
     `
 }
