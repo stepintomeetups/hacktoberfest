@@ -52,7 +52,7 @@ module.exports = {
       owner: 'cryptid-org',
       project: 'crpytid-js',
       description:
-        'A cryptid-native C nyelven készült, és elsősorban WebAssemblyt céloz. Ezt a WebAssembly modult csomagolja be a cryptid-js, lehetővé téve a modul kényelmes felhasználását böngészőben és szerver-oldalon egyaránt.',
+        'A cryptid-native C nyelven készült, és elsősorban WebAssemblyt céloz. Az így létrejött WebAssembly modult csomagolja be a cryptid-js, lehetővé téve a modul kényelmes felhasználását böngészőben és szerver-oldalon egyaránt.',
       maintainers: ['BeardOfDoom', 'battila7'],
       showLogo: true,
       topics: ['Kriptográfia', 'JavaScript'],
@@ -68,7 +68,7 @@ module.exports = {
           number: '7',
           title: 'Introduce eslint and prettier',
           description:
-            'Konfiguráljuk be a kódbázis lintelését és formázását az eslint és a prettier alkalmazások segítségével.',
+            'Konfiguráljuk a kódbázis lintelését és formázását az eslint és a prettier alkalmazások segítségével.',
           level: 1,
         },
         {
@@ -99,21 +99,21 @@ module.exports = {
           number: '1',
           title: 'Deploy to npmjs.com',
           description:
-            'Készíteni kell egy olyan GitHub Actions jobot, mely a kipakolja a könyvtárat tartalmazó npm csomagot npmjs.com-ra.',
+            'Készítsünk egy olyan GitHub Actions jobot, mely a kipakolja a könyvtárat tartalmazó npm csomagot npmjs.com-ra.',
           level: 1,
         },
         {
           number: '2',
           title: 'Configurable unavailable handler',
           description:
-            'Ha a fastify-status által kezelt szolgáltatás FAILING státuszra vált, akkor a könyvtár automatikusan 503 SERVICE UNAVAILABLE választ küld minden lekérdezésre. A feladat részeként ezt a viselkedést kell konfigurálhatóvá tenni.',
+            'Ha a fastify-status által kezelt szolgáltatás FAILING státuszra vált, akkor a könyvtár automatikusan 503 SERVICE UNAVAILABLE választ küld minden lekérdezésre. A feladat részeként ezt a viselkedést szeretnénk konfigurálhatóvá tenni.',
           level: 1,
         },
         {
           number: '3',
           title: 'Detailed and friendly README',
           description:
-            'A fastify-status sebtiben készült, mint apró belsős utility csomag. Emiatt nem sok dokumentáció áll rendelkezésre hozzá. Készíteni kell tehát egy szép, informatív README-t, mely eligazítja a látogatókat és felhasználókat.',
+            'A fastify-status sebtiben készült, mint apró belsős utility csomag. Emiatt nem sok dokumentáció áll rendelkezésre hozzá. Készítsünk tehát egy szép, informatív README-t, mely eligazítja a látogatókat és a felhasználókat.',
           level: 2,
         },
       ],
@@ -121,15 +121,24 @@ module.exports = {
     {
       owner: 'sokuteihq',
       project: 'sokutei',
-      description: '',
+      description:
+        'C nyelven írt teljesítménytesztelési könyvtár, mely kifejezetten a különleges célplatformokon (WebAssembly, beágyazott eszközök, stb.) való felhasználásra készült.',
       maintainers: ['VGeorgee', 'battila7'],
       showLogo: false,
-      topics: [],
+      topics: ['Teljesítménytesztelés', 'C'],
       issues: [
         {
-          number: '1',
-          title: '',
-          description: '',
+          number: '21',
+          title: 'Testing with CMake',
+          description:
+            'CMake segítségével állítsunk össze egy tesztelési folyamatot, majd írjunk egy példa tesztet a greatest tesztelési könyvtárra alapozva.',
+          level: 1,
+        },
+        {
+          number: '7',
+          title: 'GitHub Actions Test Workflow',
+          description:
+            'Megalapozandó a sokutei Continuous Integration pipeline-ját, készítsünk egy olyan GitHub Actions workflow-t, mely lefuttatja a teszteket minden egyes master push vagy PR alkalmával.',
           level: 1,
         },
       ],
