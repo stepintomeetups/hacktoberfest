@@ -152,6 +152,7 @@ html, body {
     background-color: white;
     border-radius: 50%;
     box-shadow: 4px 4px 0px 0px var(--hacktober-pink);
+    display: flex;
 }
 
 .repository-title-image {

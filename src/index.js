@@ -5,6 +5,10 @@ const OUTPUT_DIRECTORY = path.join(__dirname, '..', 'public')
 
 const data = require('./data')
 
+const title = 'Step into Open Source'
+const description = 'A Step into Open Source (a Hacktoberfest része) meetup hivatalos honlapja.'
+const url = 'https://stepintomeetups.hu'
+
 ;(function main() {
   const page = html()
 
@@ -26,7 +30,26 @@ function html() {
 function head() {
   return `
     <head>
-        <title>Step into Open Source</title>
+        <title>${title}</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="description" content="${description}" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+
+        <meta property="og:image:height" content="1274" />
+        <meta property="og:image:width" content="849" />
+        <meta property="og:site_name" content="${title}" />
+        <meta property="og:locale" content="hu_HU" />
+        <meta property="og:title" content="${title}" />
+        <meta property="og:description" content="${description}" />
+        <meta property="og:url" content="${url}" />
+        <meta property="og:image" content="https://stepintomeetups.hu/og-image.jpg" />
 
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 
