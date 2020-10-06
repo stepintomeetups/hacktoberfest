@@ -47,21 +47,44 @@ module.exports = {
         },
       ],
     },
-    /*{
+    {
       owner: 'cryptid-org',
-      project: 'crpytid-ja',
-      description: '',
+      project: 'crpytid-js',
+      description:
+        'A cryptid-native C nyelven készült, és elsősorban WebAssemblyt céloz. Ezt a WebAssembly modult csomagolja be a cryptid-js, lehetővé téve a modul kényelmes felhasználását böngészőben és szerver-oldalon egyaránt.',
       maintainers: ['BeardOfDoom', 'battila7'],
-      topics: [],
+      topics: ['Kriptográfia', 'JavaScript'],
       issues: [
         {
-          number: '1',
-          title: '',
-          description: '',
+          number: '6',
+          title: 'Migrate to pnpm',
+          description:
+            'A könyvtár jelenleg az npm package managert használja. Ugyanerre a feladatra egy jobb alternatíva a pnpm. A feladat egy gyors migráció npm-ről pnpm-re.',
+          level: 1,
+        },
+        {
+          number: '7',
+          title: 'Introduce eslint and prettier',
+          description:
+            'Konfiguráljuk be a kódbázis lintelését és formázását az eslint és a prettier alkalmazások segítségével.',
+          level: 1,
+        },
+        {
+          number: '8',
+          title: 'Introduce commit message linting',
+          description:
+            'Nemcsak kódot lehet lintelni, hanem akár git commit üzeneteket is. Ebben az issue-ban a feladat a conventional commits specifikációnak megfelelő lintelés konfigurálása.',
+          level: 1,
+        },
+        {
+          number: '9',
+          title: 'GitHub Actions workflow on push',
+          description:
+            'Megalapozandó a cryptid-js Continuous Integration pipeline-ját, készítsünk egy olyan GitHub Actions workflow-t, mely lefuttatja a lintelést minden egyes master push vagy PR alkalmával.',
           level: 1,
         },
       ],
-    },*/
+    },
     {
       owner: 'chreeio',
       project: 'fastify-status',
@@ -92,7 +115,7 @@ module.exports = {
         },
       ],
     },
-    /*{
+    {
       owner: 'sokuteihq',
       project: 'sokutei',
       description: '',
@@ -106,6 +129,6 @@ module.exports = {
           level: 1,
         },
       ],
-    },*/
+    },
   ],
 }
