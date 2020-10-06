@@ -9,9 +9,17 @@ module.exports = {
     },
     VGeorgee: {
       name: 'Vereb György',
+      email: 'verebgeorge@gmail.com',
+      github: 'https://github.com/vgeorgee',
+      linkedin: 'https://www.linkedin.com/in/gy%C3%B6rgy-vereb-bbaa90193/',
+      image: 'https://avatars3.githubusercontent.com/u/32582193?s=460&v=4',
     },
     lajoskvcs: {
       name: 'Kovács Lajos',
+      email: 'lajos.kovacs@chree.io',
+      github: 'https://github.com/lajoskvcs',
+      linkedin: 'https://www.linkedin.com/in/lajoskvcs/',
+      image: 'https://avatars0.githubusercontent.com/u/15230676?s=460&u=1ac1907df5d0adcb32f751ee889952f8fe3f452a&v=4',
     },
     battila7: {
       name: 'Bagossy Attila',
