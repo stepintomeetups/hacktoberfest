@@ -61,23 +61,38 @@ module.exports = {
           level: 1,
         },
       ],
-    },
+    },*/
     {
       owner: 'chreeio',
       project: 'fastify-status',
-      description: '',
+      description: 'Version és healthcheck információkat kiszolgáló plugin a Fastify Node.js HTTP keretrendszerhez.',
       maintainers: ['lajoskvcs', 'battila7'],
-      topics: [],
+      topics: ['HTTP', 'Fastify', 'Node.js', 'TypeScript'],
       issues: [
         {
           number: '1',
-          title: '',
-          description: '',
+          title: 'Deploy to npmjs.com',
+          description:
+            'Készíteni kell egy olyan GitHub Actions jobot, mely a kipakolja a könyvtárat tartalmazó npm csomagot npmjs.com-ra.',
           level: 1,
+        },
+        {
+          number: '2',
+          title: 'Configurable unavailable handler',
+          description:
+            'Ha a fastify-status által kezelt szolgáltatás FAILING státuszra vált, akkor a könyvtár automatikusan 503 SERVICE UNAVAILABLE választ küld minden lekérdezésre. A feladat részeként ezt a viselkedést kell konfigurálhatóvá tenni.',
+          level: 1,
+        },
+        {
+          number: '3',
+          title: 'Detailed and friendly README',
+          description:
+            'A fastify-status sebtiben készült, mint apró belsős utility csomag. Emiatt nem sok dokumentáció áll rendelkezésre hozzá. Készíteni kell tehát egy szép, informatív README-t, mely eligazítja a látogatókat és felhasználókat.',
+          level: 2,
         },
       ],
     },
-    {
+    /*{
       owner: 'sokuteihq',
       project: 'sokutei',
       description: '',
