@@ -223,6 +223,15 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 790px) {
+  .repository-title {
+    flex-direction: column;
+  }
+  .repository-title-image-parent {
+    margin-bottom: 1.5rem;
+  }
+}
+
 .repository-title-image-parent {
   padding: 23px;
   margin-right: 1.3rem;
@@ -291,6 +300,9 @@ body {
   .repository-maintainer {
     margin-top: 1.5rem;
   }
+  .repository-maintainer:not(:last-child) {
+    margin-right: 0px !important;
+  }
 }
 
 .repository-maintainer {
@@ -308,7 +320,7 @@ body {
 .repository-maintainer-image img {
   box-shadow: 4px 4px 0px 0px var(--hacktober-pink);
   border-radius: 50%;
-  width: 125px;
+  width: 5.4rem;
 }
 
 .repository-maintainer-information {
@@ -351,4 +363,13 @@ body {
 .issue-description {
   font-size: 1.3rem;
   padding-left: 2rem;
+}
+
+@media screen and (max-width: 790px) {
+  .issue {
+    padding-left: 0rem;
+  }
+  .issue-description {
+    padding-left: 1.25rem;
+  }
 }
