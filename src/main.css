@@ -111,14 +111,19 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding-top: 10rem;
   padding-bottom: 5rem;
 }
 
-.logo img {
+.logo {
   width: 100vw;
+  height: 12rem;
   user-select: none;
   pointer-events: none;
+  background-image: url('./assets/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2rem;
 }
 
 .boxes {
