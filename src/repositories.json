@@ -15,10 +15,35 @@
     ],
     "issues": [
       {
-        "number": "27",
-        "title": "Windows Build",
+        "number": "11",
+        "title": "Move JSON functionality into native",
+        "description": "A felhasználói azonosítók jelenleg struktúrálatlan formában érkeznek a könyvtár C nyelven íródott részébe és a JavaScript könyvtárrész felelős annak JSON-be alakításáért és annak rendezéséért. A feladat ezen funkcionalitás áthelyezése C oldalra."
+      },
+      {
+        "number": "43",
+        "title": "Migrate build scripts to cmake",
+        "description": "A könyvtár fordításáért felelős szkriptek jelenleg a task.js nevet viselő eszközön alapszanak, amelyet célunk lecserélni CMake-re."
+      },
+      {
+        "number": "86",
+        "title": "Migrate test scripts to CMake",
+        "description": "A könyvtár teszteléséért felelős szkriptek jelenleg a task.js nevet viselő eszközön alapszanak, amelyet célunk lecserélni CMake-re."
+      },
+      {
+        "number": "87",
+        "title": "Create a developer environment",
+        "description": "A projektben található kódok fordítására és futtatására megfelelő fejlesztői környezet elkészítése."
+      },
+      {
+        "number": "88",
+        "title": "Build the library on Windows",
         "description": "A könyvtár platformfüggő részeinek portolása Windows-ra, majd a fordítás és futtatás Windows-on.",
         "level": 2
+      },
+      {
+        "number": "89",
+        "title": "Introduce commit message linting",
+        "description": "Nemcsak kódot lehet lintelni, hanem akár git commit üzeneteket is. Ebben az issue-ban a feladat a conventional commits specifikációnak megfelelő lintelés konfigurálása."
       }
     ]
   },
